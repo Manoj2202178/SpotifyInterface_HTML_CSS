@@ -1,5 +1,5 @@
 # 🎵 Spotify Interface Clone (HTML & CSS)
-
+A Basic Application based on Spotify
 A responsive Spotify Web Player UI clone built using **pure HTML and CSS**.  
 This project focuses on layout, styling, and UI/UX replication of Spotify’s web interface.
 
@@ -23,4 +23,6 @@ This project focuses on layout, styling, and UI/UX replication of Spotify’s we
 - **Font Awesome Icons**
 - **Google Fonts (Montserrat)**
 
-
+---
+## View the live website
+- https://spotifyinterface-html-css.onrender.com/
