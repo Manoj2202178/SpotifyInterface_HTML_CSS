@@ -280,3 +280,55 @@ h2{
 .operations i{
     margin: 1rem;
 }
+
+/* Hide menu icon on desktop */
+.mobile-menu {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+
+    .mobile-menu {
+        display: block;
+        margin-right: 1rem;
+    }
+
+    .sidebar {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        height: 100vh;
+        width: 280px;
+        z-index: 100;
+        transition: left 0.3s ease;
+    }
+
+    .sidebar.active {
+        left: 0;
+    }
+
+    .maincontent {
+        margin: 0;
+        border-radius: 0;
+    }
+}
+.mobile-menu {
+    z-index: 200;
+}
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 90;
+}
+
+.overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}

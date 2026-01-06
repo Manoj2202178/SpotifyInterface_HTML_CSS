@@ -15,6 +15,7 @@
 
 </head>
 <body>
+    <div class="overlay" onclick="closeSidebar()"></div>
     <div class="main">
         <div class="sidebar">
             <div class="nav">
@@ -55,6 +56,7 @@
         </div>
         <div class="maincontent">
             <div class="stickynav">
+                <i class="fa-solid fa-bars mobile-menu" onclick="toggleSidebar()"></i>
                 <div class="stickyicons">
                     <img src="backward_icon.png" >
                     <img class="hide" src="forward_icon.png">
@@ -168,5 +170,16 @@
             </div>
         </div>
     </div>
+    <script>
+        function toggleSidebar() {
+            document.querySelector('.sidebar').classList.toggle('active');
+            document.querySelector('.overlay').classList.toggle('active');
+        }
+
+        function closeSidebar() {
+            document.querySelector('.sidebar').classList.remove('active');
+            document.querySelector('.overlay').classList.remove('active');
+        }
+    </script>
 </body>
 </html>
